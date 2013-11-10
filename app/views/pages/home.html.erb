@@ -1,5 +1,12 @@
 <div class="jumbotron">
-	<h1>Welcome back teachers!</h1>
-	<%= link_to "Login", "#", class: "btn btn-default btn-lg" %>
-	<%= link_to "Sign Up", "#", class: "btn btn-primary btn-lg" %>
+	<h1>2014 Ruby Conference</h1>
+	<% if user_signed_in? %>
+          <p>Welcome to our new site, developers!</p>
+     <% else %>
+     <p>
+     	<%= link_to "Login", new_user_session_path, class: "btn btn-default btn-lg" %>
+	<%= link_to "Sign Up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
+     </p>
+     <% end %>
+	
 </div>
