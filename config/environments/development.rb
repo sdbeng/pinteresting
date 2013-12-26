@@ -29,4 +29,7 @@ Pinteresting::Application.configure do
 
   #Required by devise and heroku
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+
+  #will let Paperclip know where to look
+  #Paperclip.options[:command_path] = "/usr/local/bin/"
 end
