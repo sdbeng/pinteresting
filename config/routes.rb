@@ -2,7 +2,13 @@ Pinteresting::Application.routes.draw do
   resources :pins
 
   devise_for :users
-  root 'pages#home'
+
+  #I will change the home page to the pins page
+  #root 'pages#home'
+  root 'pins#index'
+
+  #Check & test if I have to do change the root fot the rest of the pages, as well!
+  #doesn't seem i need to
   get 'about' => 'pages#about'
   get 'proposals' => 'pages#proposals'
 
