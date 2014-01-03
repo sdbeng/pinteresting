@@ -9,11 +9,14 @@ group :development, :test do
 gem 'sqlite3'
 end
 
-# Use SCSS for stylesheets
+# Use SCSS for stylesheets - update: it was 4.0.0 but support made me change
+#it to 3.0.3.0 - to solve the heroku push issue
 gem 'sass-rails', '~> 4.0.0'
 
 #add the bootstrap gem here for the sass open source
-gem 'bootstrap-sass', github: 'thomas-mcdonald/bootstrap-sass', branch: '3'
+#gem 'bootstrap-sass', github: 'thomas-mcdonald/bootstrap-sass', branch: '3'
+#update: support made me change it to 3.0.3.0 - to solve the heroku push issue
+gem 'bootstrap-sass', '~> 3.0.3.0'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
